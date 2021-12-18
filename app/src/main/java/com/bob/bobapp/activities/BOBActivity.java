@@ -221,7 +221,7 @@ public class BOBActivity extends BaseActivity implements OnItemDeleteListener
     @Override
     public void handleListener() {
 
-        llMenu.setOnClickListener(this);
+        //llMenu.setOnClickListener(this);
 
         tvUsername.setOnClickListener(this);
 
