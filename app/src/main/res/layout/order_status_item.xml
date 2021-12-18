@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/linearData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_9sdp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_5sdp">
+            <TextView
+                android:id="@+id/fundName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kotak Balanced Advantage Fund"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/acumin_bdpro"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/white_rect">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Client Name"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:textColor="#858790"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/acumin_rpro"/>
+                <TextView
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:id="@+id/name"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Ashok Jain" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:fontFamily="@font/acumin_rpro"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorGray"
+                            android:layout_height="wrap_content"
+                            android:text="Date" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acumin_bdpro"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="17-Aug-2020" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/txtAmountChange"
+                            android:textSize="@dimen/_11ssp"
+                            android:fontFamily="@font/acumin_rpro"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorGray"
+                            android:layout_height="wrap_content"
+                            android:text="Amount" />
+
+                        <TextView
+                            android:id="@+id/amount"
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acumin_bdpro"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="11500"
+                            android:ellipsize="end"
+                            android:lines="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:fontFamily="@font/acumin_rpro"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/colorGray"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="Status" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp">
+                            <TextView
+                                android:id="@+id/status"
+                                android:textSize="@dimen/_11ssp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/acumin_bdpro"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:text="11500"  />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/acumin_rpro"
+                            android:text="Order Id"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <TextView
+                            android:id="@+id/txtOrderId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/acumin_bdpro"
+                            android:lines="1"
+                            android:text="12302"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11ssp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearOrderBasis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order Basis"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:textColor="#858790"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/acumin_rpro"/>
+                    <TextView
+                        android:id="@+id/txtOrderBasis"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/acumin_bdpro"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="17-Aug-2020" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Switch From Fund"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:textColor="#858790"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/acumin_rpro"/>
+                    <TextView
+                        android:id="@+id/txtSwitchToFund"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/acumin_bdpro"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="17-Aug-2020" />
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

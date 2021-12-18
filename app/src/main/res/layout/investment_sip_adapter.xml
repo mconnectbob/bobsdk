@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/linearData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_9sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginBottom="@dimen/_9sdp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:buttonTint="@color/btn_color"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:text="Scheme Name"
+                    android:textColor="#858790"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:text="Amount"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:textColor="#858790"
+                    android:textSize="@dimen/_12ssp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start|center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+                <CheckBox
+                    android:id="@+id/chkSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/btn_color"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtSchemeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kotak Balanced Advantage"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:layout_weight="1"
+                   android:maxLines="3"
+                    android:gravity="center|start"
+                    android:textColor="@color/dark_black"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7,000"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/dark_black"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/imgDelete"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cart_delete"
+                    android:gravity="end"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    app:tint="@color/btn_color" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:gravity="center|start">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/btn_color"
+                    android:visibility="gone"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Installments:"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:textColor="@color/cart_list_text_color"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtInstallment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="661"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:textColor="@color/dark_black"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textSize="@dimen/_11ssp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:textColor="@color/dark_black"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frequency:"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:textColor="@color/cart_list_text_color"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtFrequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:textColor="@color/dark_black"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textSize="@dimen/_11ssp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:textColor="@color/dark_black"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day:"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:textColor="@color/cart_list_text_color"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:textColor="@color/dark_black"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearDividend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_75sdp"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDividend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:text="Select Dividend Option"
+                        android:fontFamily="@font/acumin_rpro"/>
+                    <ImageView
+                        android:layout_width="@dimen/_13sdp"
+                        android:layout_height="@dimen/_13sdp"
+                        android:src="@drawable/dropdown"
+                        android:layout_gravity="center|end"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        tools:ignore="UseAppTint"
+                        app:tint="@color/btn_color" />
+                </FrameLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

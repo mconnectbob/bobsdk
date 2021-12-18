@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<ProgressBar android:id="@+id/progressBar"
+    android:theme="@style/CircularProgress"
+    style="@style/Widget.AppCompat.ProgressBar"
+    android:layout_width="100dp"
+    android:layout_gravity="center"
+    android:layout_height="100dp"
+    android:indeterminateDrawable="@drawable/custom_progress_dialog"
+    xmlns:android="http://schemas.android.com/apk/res/android" />-->
+<!--
+<com.facebook.shimmer.ShimmerFrameLayout
+    android:id="@+id/shimmer_view_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.5"
+    android:layout_gravity="center"
+    app:shimmer_duration="1000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/app_logo_orange"/>
+
+</com.facebook.shimmer.ShimmerFrameLayout>-->
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/animation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_gravity="center"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android" />

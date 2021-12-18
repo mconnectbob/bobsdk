@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_rect"
+    app:cardCornerRadius="@dimen/_10sdp"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/white_rect">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:orientation="horizontal">
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webview"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mutual Fund data as well as fund ratings have been sourced from Morningstar India. Although Morningstar uses reasonable efforts to ensure that information on the mobile app/website is accurate and complete, Bank of Baroda, its affiliates, officers, Directors and employee cannot guarantee this to be the case. As a result, use of the data and ratings is at your sole risk and Bank of Baroda cannot accept any liability for loss or damage suffered by you arising from your use of information contained on the mobile app / website. We recommend you to take adequate steps to verify te accuracy and completeness of any information contained on the mobile app / site and also refer Morningstar India's terms of use. "
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            android:fontFamily="@font/acumin_rpro"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMoveToCart"
+                android:textColor="@color/btn_color"
+                android:background="@drawable/btn_secondary_rectangular"
+                android:layout_width="@dimen/_96sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:text="No"
+                android:visibility="gone"
+                android:fontFamily="@font/acumin_rpro"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12ssp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddMore"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_rectangular"
+                android:layout_width="@dimen/_96sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:text="Ok"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/acumin_rpro"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12ssp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

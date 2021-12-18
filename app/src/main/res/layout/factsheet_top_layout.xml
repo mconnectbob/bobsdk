@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotak Balanced Advantage Fund Reg-G"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        android:id="@+id/tv_scheme_name"
+        android:fontFamily="@font/acumin_bdpro"/>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equity Mid cap"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/_14ssp"
+        android:id="@+id/tv_category"
+        android:fontFamily="@font/acumin_bdpro"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="47"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAV: "
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/acumin_rpro"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAV value "
+                android:textColor="@color/start_color"
+                android:textSize="@dimen/_14ssp"
+                android:id="@+id/tv_nav"
+                android:fontFamily="@font/acumin_rpro"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+           >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:text="SIP"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/acumin_rpro"
+                android:background="@drawable/btn_rectangular"
+                android:id="@+id/btn_sip"/>
+
+            <TextView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:text="Buy"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/acumin_rpro"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_rectangular"
+                android:id="@+id/btn_buy"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

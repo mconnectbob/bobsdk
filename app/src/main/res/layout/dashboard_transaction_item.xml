@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_inner_dark_gray"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:id="@+id/layout_transaction_date"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+           android:fontFamily="@font/acumin_bdpro"
+            android:id="@+id/tv_transaction_date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Dec"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/acumin_rpro"
+            android:id="@+id/tv_transaction_month"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="69"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Axis Ultra Short Term"
+            android:textColor="@color/black"
+           android:fontFamily="@font/acumin_bdpro"
+            android:textSize="@dimen/_10ssp"
+            android:id="@+id/tv_transaction_short_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Switch In"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/acumin_rpro"
+            android:id="@+id/tv_transaction_type"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="31"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 7000"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:id="@+id/tv_transaction_amount"
+            android:fontFamily="@font/acumin_bdpro"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

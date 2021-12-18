@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_rect"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_rect">
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/close"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/buy"
+        android:paddingLeft="20dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Buy"
+        android:fontFamily="@font/acumin_bdpro"
+        android:textSize="@dimen/_14ssp"/>
+
+    <ImageView
+        android:id="@+id/imgBuy"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/sip"
+        android:paddingLeft="20dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acumin_bdpro"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/black"
+        android:text="SIP"/>
+
+    <ImageView
+        android:id="@+id/imgSip"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/redeem"
+        android:paddingLeft="20dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acumin_bdpro"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/black"
+        android:text="Redeem"/>
+
+    <ImageView
+        android:id="@+id/imgRedeem"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvSwitch"
+        android:paddingLeft="20dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acumin_bdpro"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/black"
+        android:text="Switch"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/swp"
+        android:paddingLeft="20dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acumin_bdpro"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/black"
+        android:text="SWP"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/stp"
+        android:paddingLeft="20dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acumin_bdpro"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/black"
+        android:text="STP"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/acumin_rpro"
+                android:textColor="@color/black"
+                android:maxLines="3"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Kotak Balanced Advantag e Fund Reg-G | Current NAV : 12.71(28-Dec-2020)"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:textColor="@color/buyTextColor"
+                    android:text="@string/folio_no_"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtFolioNumber"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:textColor="@color/black"
+                    android:text="K123454"
+                    android:layout_marginLeft="@dimen/_2sdp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/dotted_line"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/acumin_rpro"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/investment_account"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/investmentAccountName"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/acumin_rpro"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_3sdp" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14ssp"
+                        android:fontFamily="@font/acumin_rpro"
+                        android:textColor="@color/buyTextColor"
+                        android:text="@string/saleableunit"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtSealableUnits"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+  android:textSize="@dimen/_14ssp"
+                        android:fontFamily="@font/acumin_rpro"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:lines="1"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14ssp"
+                        android:fontFamily="@font/acumin_rpro"
+                        android:textColor="@color/buyTextColor"
+                        android:text="@string/current_fund_value"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtCurrentFundValue"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14ssp"
+                        android:fontFamily="@font/acumin_rpro"
+                        android:textColor="@color/black"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:layout_marginTop="@dimen/_5sdp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/rounded_inner_white_ourte_gray">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_13ssp"
+                        android:fontFamily="@font/acumin_bdpro"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:text="@string/Amount"
+                        android:textColor="@color/btn_color" />
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@color/btn_color"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtUnits"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="@color/buyTextColor"
+                        android:gravity="center"
+                        android:fontFamily="@font/acumin_bdpro"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:text="@string/unit"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14ssp"
+                        android:fontFamily="@font/acumin_rpro"
+                        android:textColor="@color/buyTextColor"
+                        android:text="@string/frequency"/>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/rounded_inner_white_ourte_gray">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtLatestFrequency"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/acumin_rpro"
+                                android:gravity="center|start"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:text="Select"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_13sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center|end"
+                                android:layout_marginRight="@dimen/_7sdp"
+                                android:src="@drawable/dropdown"
+                                app:tint="@color/btn_color"
+                                tools:ignore="UseAppTint" />
+
+                        </FrameLayout>
+
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:backgroundTint="@color/btn_color"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:id="@+id/spineerFrequency"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14ssp"
+                        android:fontFamily="@font/acumin_rpro"
+                        android:textColor="@color/buyTextColor"
+                        android:text="@string/day"/>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/rounded_inner_white_ourte_gray">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtDay"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/acumin_rpro"
+                                android:gravity="center|start"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:text="Select"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_13sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center|end"
+                                android:layout_marginRight="@dimen/_7sdp"
+                                android:src="@drawable/dropdown"
+                                app:tint="@color/btn_color"
+                                tools:ignore="UseAppTint" />
+
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:backgroundTint="@color/btn_color"
+                            android:layout_gravity="center"
+                            android:id="@+id/spineerDay"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/acumin_rpro"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/no_of_investment"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtInstallments"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/_1sdp"
+                    android:gravity="center|start"
+                    android:inputType="number"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:visibility="gone"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/transfer_fund"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:visibility="gone"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/spineerSwitchFund"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSellAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/acumin_rpro"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="Sell amount"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:id="@+id/edtAMount"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/acumin_rpro"
+                android:textColor="@color/start_color"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center|start"
+                android:text="Please Note: Exit Load and Taxes may apply on redemption basis holding period.Salable units represents units available for sale(i.e. units net of redemption/switch out order placed but not executed)."/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddToCart"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_inner_orange"
+                android:layout_width="@dimen/_96sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:text="@string/add_cart"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/acumin_rpro"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

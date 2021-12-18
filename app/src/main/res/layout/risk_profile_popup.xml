@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_rect"
+    app:cardCornerRadius="@dimen/_10sdp"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/white_rect">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Based on the information you have provided your risk profile has been evaluated as:"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:fontFamily="@font/acumin_rpro"
+            android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtRiskProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Highly Aggresive"
+            android:textSize="@dimen/_16ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/acumin_bdpro"
+            android:textColor="@color/tab_selected"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOverview"
+                android:textColor="@color/btn_color"
+                android:background="@drawable/btn_secondary_rectangular"
+                android:layout_width="@dimen/_98sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:text="Overview"
+                android:fontFamily="@font/acumin_rpro"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12ssp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnInvest"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_rectangular"
+                android:layout_width="@dimen/_98sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:text="Invest/Redeem"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:fontFamily="@font/acumin_rpro"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12ssp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
